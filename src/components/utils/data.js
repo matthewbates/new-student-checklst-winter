@@ -24,23 +24,50 @@ export const accordionData = {
       text: "Complete the ",
       hyperlinkText: "Discoveries Winter Experience",
       hyperlink: "https://canvas.du.edu/courses/166771",
-      subText: [
+      subTextOne: [
         {
           id: 1,
-          text: "May: Welcome & Transition to DU",
+          text: "November:",
+          subText: [
+            {
+              id: 1,
+              text: "Welcome & Transition to DU",
+            },
+            {
+              id: 2,
+              text: "Academic Advising & Registration",
+            },
+            {
+              id: 3,
+              text: "Well-being & Safety + Vector Modules",
+              subText: [
+                {
+                  id: 1,
+                  text: "AlcoholEdu for College",
+                },
+                {
+                  id: 2,
+                  text: "Sexual Assault Prevention for Undergraduates",
+                },
+                {
+                  id: 3,
+                  text: "Diversity, Equity, & Inclusion",
+                },
+              ],
+            },
+          ],
         },
+      ],
+      subTextTwo: [
         {
-          id: 2,
-          text: "June: Academic Advising & Registration",
-        },
-        {
-          id: 3,
-          text: "July: Well-being & Safety",
-        },
-        {
-          id: 4,
-          text: "August: Campus Engagement & Next Steps",
-          subText: "New Student Survey Released",
+          id: 1,
+          text: "December:",
+          subText: [
+            {
+              id: 1,
+              text: "Campus Engagement & Next Steps",
+            },
+          ],
         },
       ],
     },
@@ -58,8 +85,74 @@ export const accordionData = {
       hyperlink: "https://my.du.edu/tasks",
     },
   },
-  prepareForAdvising: {},
-  registerForClasses: {},
-  beforeArrivingOnCampus: {},
-  afterArrivingOnCampus: {},
+  prepareForAdvising: {
+    one: {
+      id: 1,
+      hyperlinkText: "Explore & Research Classes",
+      hyperlink:
+        "https://www.du.edu/registrar/new-student/majors-minors-course-plans",
+    },
+  },
+  registerForClasses: {
+    one: {
+      id: 1,
+      text: "Plan several ",
+      hyperlinkText: "Quarter Schedules",
+      hyperlink:
+        "https://apps02.du.edu:4443/StudentRegistrationSsb/ssb/term/termSelection?mode=plan",
+    },
+    two: {
+      id: 2,
+      textOne: "Register ",
+      textTwo: "for classes",
+      hyperlink:
+        "https://apps02.du.edu:4443/StudentRegistrationSsb/ssb/registration",
+    },
+  },
+  beforeArrivingOnCampus: {
+    one: {
+      id: 1,
+      textOne: "Prepare to Live On Campus ",
+      textTwo:
+        ". New students move into their residence hall on Friday, January 5 from 8:30 a.m.-11:30 a.m.",
+      hyperlink:
+        "https://studentaffairs.du.edu/housing/new-students/know-before-you-go",
+    },
+    two: {
+      id: 2,
+      text: "Submit ",
+      hyperlinkText: "Immunization Records",
+      hyperlink:
+        "https://www.du.edu/health-and-counseling-center/medical/immunization.html",
+    },
+    three: {
+      id: 3,
+      text: "Complete ",
+      hyperlinkText: "Health Insurance Requirement",
+      hyperlink:
+        "https://studentaffairs.du.edu/health-counseling-center/insurance-plans-fees",
+    },
+    four: {
+      id: 4,
+      text: "Submit ",
+      hyperlinkText: "DU ID Card Photo",
+      hyperlink:
+        "https://www.du.edu/pioneercard/new-card/online-photo-submission",
+    },
+  },
+  afterArrivingOnCampus: {
+    one: {
+      id: 1,
+      textOne: "Participate in ",
+      hyperlinkText: "Discoveries Orientation",
+      hyperlink: "https://studentaffairs.du.edu/orientation/on-campus-programs",
+      textTwo: "on January 5-7",
+    },
+    two: {
+      id: 2,
+      text: "Explore events, clubs, & organizations on",
+      hyperlinkText: "Crimson Connect",
+      hyperlink: "https://crimsonconnect.du.edu/",
+    },
+  },
 };
