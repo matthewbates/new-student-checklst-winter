@@ -87,7 +87,7 @@ export const accordionData = {
   },
   prepareForAdvising: {
     one: {
-      id: 1,
+      id: 7,
       hyperlinkText: "Explore & Research Classes",
       hyperlink:
         "https://www.du.edu/registrar/new-student/majors-minors-course-plans",
@@ -95,14 +95,14 @@ export const accordionData = {
   },
   registerForClasses: {
     one: {
-      id: 1,
+      id: 8,
       text: "Plan several ",
       hyperlinkText: "Quarter Schedules",
       hyperlink:
         "https://apps02.du.edu:4443/StudentRegistrationSsb/ssb/term/termSelection?mode=plan",
     },
     two: {
-      id: 2,
+      id: 9,
       textOne: "Register ",
       textTwo: "for classes",
       hyperlink:
@@ -111,7 +111,7 @@ export const accordionData = {
   },
   beforeArrivingOnCampus: {
     one: {
-      id: 1,
+      id: 10,
       textOne: "Prepare to Live On Campus ",
       textTwo:
         ". New students move into their residence hall on Friday, January 5 from 8:30 a.m.-11:30 a.m.",
@@ -119,21 +119,21 @@ export const accordionData = {
         "https://studentaffairs.du.edu/housing/new-students/know-before-you-go",
     },
     two: {
-      id: 2,
+      id: 11,
       text: "Submit ",
       hyperlinkText: "Immunization Records",
       hyperlink:
         "https://www.du.edu/health-and-counseling-center/medical/immunization.html",
     },
     three: {
-      id: 3,
+      id: 12,
       text: "Complete ",
       hyperlinkText: "Health Insurance Requirement",
       hyperlink:
         "https://studentaffairs.du.edu/health-counseling-center/insurance-plans-fees",
     },
     four: {
-      id: 4,
+      id: 13,
       text: "Submit ",
       hyperlinkText: "DU ID Card Photo",
       hyperlink:
@@ -142,15 +142,15 @@ export const accordionData = {
   },
   afterArrivingOnCampus: {
     one: {
-      id: 1,
+      id: 14,
       textOne: "Participate in ",
       hyperlinkText: "Discoveries Orientation",
       hyperlink: "https://studentaffairs.du.edu/orientation/on-campus-programs",
       textTwo: "on January 5-7",
     },
     two: {
-      id: 2,
-      text: "Explore events, clubs, & organizations on",
+      id: 15,
+      text: "Explore events, clubs, & organizations on ",
       hyperlinkText: "Crimson Connect",
       hyperlink: "https://crimsonconnect.du.edu/",
     },
