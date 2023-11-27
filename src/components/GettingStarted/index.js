@@ -14,7 +14,7 @@ export const GettingStarted = ({ value }) => {
       <ul>
         {subTextOne.map(({ id, text, subText }) => (
           <li key={id}>
-            {text}
+            <strong>{text}</strong>
             <ul>
               {subText.map(({ id, text, subText }) => (
                 <>
@@ -32,7 +32,7 @@ export const GettingStarted = ({ value }) => {
         ))}
         {subTextTwo.map(({ id, text, subText }) => (
           <li key={id}>
-            {text}
+            <strong>{text}</strong>
             <ul>
               {subText.map(({ id, text }) => (
                 <li key={id}>{text}</li>

@@ -13,7 +13,7 @@ export const AccordionItemContainer = styled.div`
 
 export const AccordionItemBtn = styled.button`
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   background: ${({ $index, $activeIndex }) =>
     $index === $activeIndex
@@ -22,10 +22,11 @@ export const AccordionItemBtn = styled.button`
   color: #ffffff;
   padding: 1em;
   font-size: 1em;
+  gap: 0.5em;
   font-weight: bold;
   cursor: pointer;
   border: none;
-  /* border-bottom: 1px solid #ffffff; */
+  border-bottom: 1px solid #ffffff;
   transition: 0.3s ease;
 `;
 

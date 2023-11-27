@@ -1,11 +1,11 @@
-import ExpandLess from "@mui/icons-material/ExpandLess";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 export const Arrow = ({ index, activeIndex }) => {
   return (
-    <ExpandLess
+    <KeyboardArrowRightIcon
       sx={{
         transition: "0.3s ease",
-        transform: index === activeIndex ? "rotate(180deg)" : "0deg",
+        transform: index === activeIndex ? "rotate(90deg)" : "0deg",
       }}
     />
   );

@@ -28,8 +28,8 @@ export const AccordionItem = ({ value, title, index, activeIndex, toggle }) => {
         $activeIndex={activeIndex}
         onClick={() => toggle(index)}
       >
-        {splitAndCapitalizeTitle(title)}
         <Arrow index={index} activeIndex={activeIndex} />
+        {splitAndCapitalizeTitle(title)}
       </AccordionItemBtn>
       <AccordionItemContentWrapper
         ref={contentRef}
