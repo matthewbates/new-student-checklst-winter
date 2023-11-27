@@ -7,7 +7,7 @@ export const AccordionItemContainer = styled.div`
   flex-direction: column;
   margin: auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   overflow: hidden;
 `;
 
@@ -25,11 +25,9 @@ export const AccordionItemBtn = styled.button`
   font-weight: bold;
   cursor: pointer;
   border: none;
-  border-bottom: 1px solid #ffffff;
+  /* border-bottom: 1px solid #ffffff; */
   transition: 0.3s ease;
 `;
-
-export const AccordionItemSpan = styled.span``;
 
 export const AccordionItemContentWrapper = styled.div`
   height: ${({ $contentRef, $index, $activeIndex }) =>
@@ -40,19 +38,18 @@ export const AccordionItemContentWrapper = styled.div`
 `;
 
 export const AccordionItemContent = styled.div`
-  ul {
-  }
-`;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  gap: 0.25em;
 
-export const AccordionItemUL = styled.ul``;
-
-export const AccordionItemLI = styled.li`
-  &:first-child {
-    padding-top: 1em;
-  }
-
-  &:last-child {
-    padding-bottom: 1em;
+  div {
+    &:first-child {
+      padding-top: 1em;
+    }
+    &:last-child {
+      padding-bottom: 1em;
+    }
   }
 `;
 

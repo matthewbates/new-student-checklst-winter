@@ -39,7 +39,7 @@ export const accordionData = {
             },
             {
               id: 3,
-              text: "Well-being & Safety + Vector Modules",
+              text: "Well-being & Safety + Vector Modules:",
               subText: [
                 {
                   id: 1,
@@ -112,7 +112,7 @@ export const accordionData = {
   beforeArrivingOnCampus: {
     one: {
       id: 10,
-      textOne: "Prepare to Live On Campus ",
+      textOne: "Prepare to Live On Campus",
       textTwo:
         ". New students move into their residence hall on Friday, January 5 from 8:30 a.m.-11:30 a.m.",
       hyperlink:
@@ -144,7 +144,7 @@ export const accordionData = {
     one: {
       id: 14,
       textOne: "Participate in ",
-      hyperlinkText: "Discoveries Orientation",
+      hyperlinkText: "Discoveries Orientation ",
       hyperlink: "https://studentaffairs.du.edu/orientation/on-campus-programs",
       textTwo: "on January 5-7",
     },

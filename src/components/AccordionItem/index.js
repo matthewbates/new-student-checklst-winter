@@ -1,12 +1,8 @@
 import { useRef } from "react";
 
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
 import {
   AccordionItemContainer,
   AccordionItemBtn,
-  AccordionItemSpan,
   AccordionItemContentWrapper,
   AccordionItemContent,
   AccordionItemUL,
@@ -14,10 +10,13 @@ import {
   AccordionItemA,
 } from "./AccordionItemElements";
 
-import { splitAndCapitalizeTitle, TARGET, REL } from "../utils/helpers";
 import { GettingStarted } from "../GettingStarted";
 import { BeforeArriving } from "../BeforeArriving";
 import { AfterArriving } from "../AfterArriving";
+
+import { splitAndCapitalizeTitle, TARGET, REL } from "../utils/helpers";
+import { Arrow } from "../Arrow";
+import { Register } from "../Register";
 
 export const AccordionItem = ({ value, title, index, activeIndex, toggle }) => {
   const contentRef = useRef(null);
@@ -30,9 +29,7 @@ export const AccordionItem = ({ value, title, index, activeIndex, toggle }) => {
         onClick={() => toggle(index)}
       >
         {splitAndCapitalizeTitle(title)}
-        <AccordionItemSpan>
-          {index === activeIndex ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-        </AccordionItemSpan>
+        <Arrow index={index} activeIndex={activeIndex} />
       </AccordionItemBtn>
       <AccordionItemContentWrapper
         ref={contentRef}
@@ -41,42 +38,33 @@ export const AccordionItem = ({ value, title, index, activeIndex, toggle }) => {
         $activeIndex={activeIndex}
       >
         <AccordionItemContent>
-          <AccordionItemUL>
-            {Object.entries(value).map(
-              ([key, { id, text, hyperlinkText, hyperlink, deadline }]) => (
-                <AccordionItemLI key={key}>
-                  {id === 4 ? (
-                    <GettingStarted />
-                  ) : id === 8 ? (
-                    <BeforeArriving />
-                  ) : id === 14 ? (
-                    <AfterArriving />
-                  ) : (
-                    <>
-                      {text}
-                      <AccordionItemA
-                        href={hyperlink}
-                        target={TARGET}
-                        rel={REL}
-                      >
-                        {hyperlinkText}
-                      </AccordionItemA>
-                      <strong>{deadline}</strong>
-                    </>
-                  )}
-                </AccordionItemLI>
-              )
-            )}
-          </AccordionItemUL>
+          {Object.entries(value).map(([key, value]) => (
+            <div key={key}>
+              {value.id === 4 ? (
+                <GettingStarted value={value} />
+              ) : value.id === 9 ? (
+                <Register value={value} />
+              ) : value.id === 10 ? (
+                <BeforeArriving value={value} />
+              ) : value.id === 14 ? (
+                <AfterArriving value={value} />
+              ) : (
+                <>
+                  {value.text}
+                  <AccordionItemA
+                    href={value.hyperlink}
+                    target={TARGET}
+                    rel={REL}
+                  >
+                    {value.hyperlinkText}
+                  </AccordionItemA>
+                  <strong>{value.deadline}</strong>
+                </>
+              )}
+            </div>
+          ))}
         </AccordionItemContent>
       </AccordionItemContentWrapper>
     </AccordionItemContainer>
   );
 };
-// <AccordionItemLI key={key}>
-//   {text}
-//   <AccordionItemA href={hyperlink} target={TARGET} rel={REL}>
-//     {hyperlinkText}
-//   </AccordionItemA>
-//   <strong>{deadline}</strong>
-// </AccordionItemLI>

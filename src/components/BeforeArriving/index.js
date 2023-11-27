@@ -1,5 +1,16 @@
-import React from "react";
+import { AccordionItemA } from "../AccordionItem/AccordionItemElements";
 
-export const BeforeArriving = () => {
-  return <div>index</div>;
+import { TARGET, REL } from "../utils/helpers";
+
+export const BeforeArriving = ({ value }) => {
+  const { textOne, textTwo, hyperlink } = value;
+
+  return (
+    <>
+      <AccordionItemA href={hyperlink} target={TARGET} rel={REL}>
+        {textOne}
+      </AccordionItemA>
+      {textTwo}
+    </>
+  );
 };
