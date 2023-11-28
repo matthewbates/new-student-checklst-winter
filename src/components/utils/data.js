@@ -65,7 +65,7 @@ export const accordionData = {
           subText: [
             {
               id: 1,
-              text: "Campus Engagement & Next Steps",
+              text: "Student Experience & Next Steps",
             },
           ],
         },
@@ -103,8 +103,8 @@ export const accordionData = {
     },
     two: {
       id: 9,
-      textOne: "Register ",
-      textTwo: "for classes",
+      textOne: "Register",
+      textTwo: " for classes",
       hyperlink:
         "https://apps02.du.edu:4443/StudentRegistrationSsb/ssb/registration",
     },

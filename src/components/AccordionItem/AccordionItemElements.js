@@ -27,7 +27,7 @@ export const AccordionItemBtn = styled.button`
   cursor: pointer;
   border: none;
   border-bottom: 1px solid #ffffff;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 `;
 
 export const AccordionItemContentWrapper = styled.div`
