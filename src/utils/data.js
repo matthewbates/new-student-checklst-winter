@@ -21,6 +21,12 @@ export const accordionData = {
     },
     four: {
       id: 4,
+      text: "File ADA needs with ",
+      hyperlinkText: "Disability Services Program",
+      hyperlink: "https://studentaffairs.du.edu/disability-services-program",
+    },
+    five: {
+      id: 5,
       text: "Complete the ",
       hyperlinkText: "Discoveries Winter Experience",
       hyperlink: "https://canvas.du.edu/courses/166771",
@@ -71,15 +77,15 @@ export const accordionData = {
         },
       ],
     },
-    five: {
-      id: 5,
+    six: {
+      id: 6,
       text: "Register for ",
       hyperlinkText: "Discoveries Orientation",
       hyperlink: "https://cglink.me/2fC/r2257078",
       deadline: " (January 5-7)",
     },
-    six: {
-      id: 6,
+    seven: {
+      id: 7,
       text: "Check Your ",
       hyperlinkText: "Holds & Tasks",
       hyperlink: "https://my.du.edu/tasks",
@@ -87,7 +93,7 @@ export const accordionData = {
   },
   prepareForAdvising: {
     one: {
-      id: 7,
+      id: 8,
       hyperlinkText: "Explore & Research Classes",
       hyperlink:
         "https://www.du.edu/registrar/new-student/majors-minors-course-plans",
@@ -95,14 +101,14 @@ export const accordionData = {
   },
   registerForClasses: {
     one: {
-      id: 8,
+      id: 9,
       text: "Plan several ",
       hyperlinkText: "Quarter Schedules",
       hyperlink:
         "https://apps02.du.edu:4443/StudentRegistrationSsb/ssb/term/termSelection?mode=plan",
     },
     two: {
-      id: 9,
+      id: 10,
       textOne: "Register",
       textTwo: " for classes",
       hyperlink:
@@ -111,7 +117,7 @@ export const accordionData = {
   },
   beforeArrivingOnCampus: {
     one: {
-      id: 10,
+      id: 11,
       textOne: "Prepare to Live On Campus",
       textTwo:
         ". New students move into their residence hall on Friday, January 5 from 8:30 a.m.-11:30 a.m.",
@@ -119,21 +125,21 @@ export const accordionData = {
         "https://studentaffairs.du.edu/housing/new-students/know-before-you-go",
     },
     two: {
-      id: 11,
+      id: 12,
       text: "Submit ",
       hyperlinkText: "Immunization Records",
       hyperlink:
         "https://www.du.edu/health-and-counseling-center/medical/immunization.html",
     },
     three: {
-      id: 12,
+      id: 13,
       text: "Complete ",
       hyperlinkText: "Health Insurance Requirement",
       hyperlink:
         "https://studentaffairs.du.edu/health-counseling-center/insurance-plans-fees",
     },
     four: {
-      id: 13,
+      id: 14,
       text: "Submit ",
       hyperlinkText: "DU ID Card Photo",
       hyperlink:
@@ -142,14 +148,14 @@ export const accordionData = {
   },
   afterArrivingOnCampus: {
     one: {
-      id: 14,
+      id: 15,
       textOne: "Participate in ",
       hyperlinkText: "Discoveries Orientation ",
       hyperlink: "https://studentaffairs.du.edu/orientation/on-campus-programs",
       textTwo: "on January 5-7",
     },
     two: {
-      id: 15,
+      id: 16,
       text: "Explore events, clubs, & organizations on ",
       hyperlinkText: "Crimson Connect",
       hyperlink: "https://crimsonconnect.du.edu/",

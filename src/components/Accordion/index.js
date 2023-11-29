@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { AccordionItem } from "../AccordionItem";
 
-import { accordionData } from "../utils/data";
+import { accordionData } from "../../utils/data";
 
 export const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);

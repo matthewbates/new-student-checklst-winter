@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { CONSTANTS } from "../utils/constants";
-
 export const AccordionItemContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,12 +11,9 @@ export const AccordionItemContainer = styled.div`
 
 export const AccordionItemBtn = styled.button`
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   background: ${({ $index, $activeIndex }) =>
-    $index === $activeIndex
-      ? `${CONSTANTS.colors.duGold}`
-      : `${CONSTANTS.colors.duCrimson}`};
+    $index === $activeIndex ? "#a89968" : "#721c28"};
   color: #ffffff;
   padding: 1em;
   font-size: 1em;
@@ -26,7 +21,8 @@ export const AccordionItemBtn = styled.button`
   font-weight: bold;
   cursor: pointer;
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: ${({ $index, $activeIndex }) =>
+    $index === $activeIndex ? "none" : "1px solid #f1f2f2"};
   transition: 0.3s ease-in-out;
 `;
 
@@ -43,20 +39,21 @@ export const AccordionItemContent = styled.div`
   flex-direction: column;
   padding: 0 1em;
   gap: 0.25em;
+  border: 1px solid #f1f2f2;
 
   div {
     &:first-child {
-      padding-top: 1em;
+      padding-top: 1.5em;
     }
     &:last-child {
-      padding-bottom: 1em;
+      padding-bottom: 1.5em;
     }
   }
 `;
 
 export const AccordionItemA = styled.a`
   text-decoration: none;
-  color: ${CONSTANTS.colors.duCrimson};
+  color: #721c28;
   font-weight: bold;
 
   &:hover {

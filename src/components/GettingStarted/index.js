@@ -1,6 +1,6 @@
 import { AccordionItemA } from "../AccordionItem/AccordionItemElements";
 
-import { TARGET, REL } from "../utils/helpers";
+import { TARGET, REL } from "../../utils/helpers";
 
 export const GettingStarted = ({ value }) => {
   const { text, hyperlinkText, hyperlink, subTextOne, subTextTwo } = value;
