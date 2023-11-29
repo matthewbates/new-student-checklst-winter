@@ -29,7 +29,7 @@ export const accordionData = {
       id: 5,
       text: "Complete the ",
       hyperlinkText: "Discoveries Winter Experience",
-      hyperlink: "https://canvas.du.edu/courses/166771",
+      hyperlink: "https://canvas.du.edu/courses/176378",
       subTextOne: [
         {
           id: 1,
