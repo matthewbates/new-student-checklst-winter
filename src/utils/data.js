@@ -29,7 +29,7 @@ export const accordionData = {
       id: 5,
       text: "Complete the ",
       hyperlinkText: "Discoveries Winter Experience",
-      hyperlink: "https://canvas.du.edu/courses/176378",
+      hyperlink: "https://canvas.du.edu/courses/211901",
       subTextOne: [
         {
           id: 1,
@@ -43,24 +43,24 @@ export const accordionData = {
               id: 2,
               text: "Academic Advising & Registration",
             },
-            {
-              id: 3,
-              text: "Well-being & Safety + Vector Modules:",
-              subText: [
-                {
-                  id: 1,
-                  text: "AlcoholEdu for College",
-                },
-                {
-                  id: 2,
-                  text: "Sexual Assault Prevention for Undergraduates",
-                },
-                {
-                  id: 3,
-                  text: "Diversity, Equity, & Inclusion",
-                },
-              ],
-            },
+            // {
+            //   id: 3,
+            //   text: "Well-being & Safety + Vector Modules:",
+            //   subText: [
+            //     {
+            //       id: 1,
+            //       text: "AlcoholEdu for College",
+            //     },
+            //     {
+            //       id: 2,
+            //       text: "Sexual Assault Prevention for Undergraduates",
+            //     },
+            //     {
+            //       id: 3,
+            //       text: "Diversity, Equity, & Inclusion",
+            //     },
+            //   ],
+            // },
           ],
         },
       ],
@@ -81,8 +81,8 @@ export const accordionData = {
       id: 6,
       text: "Register for ",
       hyperlinkText: "Discoveries Orientation",
-      hyperlink: "https://cglink.me/2fC/r2257078",
-      deadline: " (January 5-7)",
+      hyperlink: "https://cglink.me/2fC/r2274032",
+      deadline: " (January 2nd - 4th)",
     },
     seven: {
       id: 7,
@@ -105,14 +105,14 @@ export const accordionData = {
       text: "Plan several ",
       hyperlinkText: "Quarter Schedules",
       hyperlink:
-        "https://apps02.du.edu:4443/StudentRegistrationSsb/ssb/term/termSelection?mode=plan",
+        "https://apps22.du.edu:8444/StudentRegistrationSsb/ssb/term/termSelection?mode=plan",
     },
     two: {
       id: 10,
       textOne: "Register",
       textTwo: " for classes",
       hyperlink:
-        "https://apps02.du.edu:4443/StudentRegistrationSsb/ssb/registration",
+        "https://apps22.du.edu:8444/StudentRegistrationSsb/ssb/registration#",
     },
   },
   beforeArrivingOnCampus: {
@@ -120,7 +120,7 @@ export const accordionData = {
       id: 11,
       textOne: "Prepare to Live On Campus",
       textTwo:
-        ". New students move into their residence hall on Friday, January 5 from 8:30 a.m.-11:30 a.m.",
+        ". New students move into their residence hall on Friday, January 2nd from 8:30 a.m.-11:30 a.m.",
       hyperlink:
         "https://studentaffairs.du.edu/housing/new-students/know-before-you-go",
     },
@@ -151,8 +151,8 @@ export const accordionData = {
       id: 15,
       textOne: "Participate in ",
       hyperlinkText: "Discoveries Orientation ",
-      hyperlink: "https://studentaffairs.du.edu/orientation/on-campus-programs",
-      textTwo: "on January 5-7",
+      hyperlink: "https://cglink.me/2fC/r2274032",
+      textTwo: " on January 2nd - 4th",
     },
     two: {
       id: 16,
