@@ -121,7 +121,7 @@ export const AccordionItemBtn = styled.button`
   }
 
   &:hover {
-    transform: translateY(-2px);
+    /* transform: translateY(-2px); */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -132,7 +132,7 @@ export const AccordionItemBtn = styled.button`
   svg {
     transition: transform 0.3s ease;
     transform: ${({ $index, $activeIndex }) =>
-      $index === $activeIndex ? "rotate(180deg)" : "rotate(0deg)"};
+      $index === $activeIndex ? "rotate(90deg)" : "rotate(0deg)"};
   }
 `;
 
